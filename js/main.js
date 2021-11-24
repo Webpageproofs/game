@@ -1,5 +1,5 @@
-//@prepros-append script.js
-//@prepros-append jq.js
+// @prepros-append script.js
+// @prepros-append jq.js
 // <ИЗОБРАЖЕНИЕ В HTML И В BACKGROUND URL>
 function ibg(){
 
@@ -95,22 +95,15 @@ $(document).ready(function () {
 		navText: ["<img src=\"img/icons/arr-left.png\" alt=\"img\" >", "<img src=\"img/icons/arr-right.png\" alt=\"img\" >"],
 		responsive: {
 			0: {
-				items: 5
+				items: 3
 			},
 			600: {
-				items: 9
+				items: 7
 			},
 			1000: {
-				items: 14
+				items: 11
 			}
 		}
-	});
-	// адаптация стрелочек у слайдера
-	var team_w = $('.owl-item.active').width();
-	$('.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev').width(team_w);
-
-	$(window).resize(function () {
-		location.reload();
 	});
 
 	// изменение должности по клику
@@ -142,8 +135,8 @@ $(document).ready(function () {
 				// console.log('Статья: id = ' + value['id'] + '; Название = '+ value['title']+ 'Текст = '+ value['text']);
 				$('.team__item').not($(this)).removeClass('team__item_active');
 				$(this).addClass('team__item_active');
-				$('.team__name').addClass('team__name'+ value['id']);
-				$('.team__job').addClass('team__job'+ value['id']);
+				$('.team__name').addClass('team__name' + value['id']);
+				$('.team__job').addClass('team__job' + value['id']);
 				$('.team__name' + value['id']).html(value['title']);
 				$('.team__job' + value['id']).html(value['text']);
 			});

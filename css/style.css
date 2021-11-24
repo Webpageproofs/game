@@ -1146,6 +1146,19 @@ textarea:focus::placeholder {
       padding-top: 35px;
       padding-bottom: 40px; } }
 
+.team__row {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto; }
+
 .team__col {
   width: 64px;
   height: 64px; }
@@ -1302,7 +1315,7 @@ textarea:focus::placeholder {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 76.3px;
+  width: 10%;
   height: 64px; }
   .owl-carousel .owl-nav button.owl-next:hover,
   .owl-carousel .owl-nav button.owl-prev:hover {
@@ -1310,12 +1323,12 @@ textarea:focus::placeholder {
 
 .owl-carousel .owl-nav button.owl-next {
   position: absolute;
-  right: 0;
+  right: -10%;
   top: 0; }
 
 .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
-  left: 0;
+  left: -10%;
   top: 0; }
 
 .work__body {
